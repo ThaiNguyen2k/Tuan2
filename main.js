@@ -1,7 +1,7 @@
 const sum = (a, b) => {
     return a * b;
 }
-console.log(sum(3, 4));
+// console.log(sum(3, 4));
 
 const check = (i) => {
     if (i % 2 === 0) {
@@ -85,3 +85,34 @@ function rechange(){
 function changecolor(){
     document.getElementById("myName").style.color="blue"
 }
+
+const students= ["Vỹ", "Khương", "Quỳnh Anh", "Nhất Anh", "Tiến Anh", "Đức Anh"];
+const students2 = ["Sơn Anh", "Phước"]
+
+// alert("Chiều dài của mảng students là: " + students.length);
+
+// alert("Vị trí index của Đức Anh là: " + students.indexOf("Đức Anh"));
+
+document.write("Xóa Phần tử đầu tiên ra khỏi mảng.")
+
+document.write("<br>");
+
+students.shift();
+
+document.write("Các phần tử còn lại trong mảng: "+ students)
+
+const chuoiten=students.join("-")
+
+console.log("Chuỗi Tên: " + chuoiten)
+
+document.write("Xóa Quỳnh Anh ra khỏi mảng.")
+
+document.write("<br>");
+
+let x = Math.floor((Math.random() * 100) + 1);
+
+console.log("Test: " + x)
+function randomBetween(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  console.log("Random: " + randomBetween(5, 10))
