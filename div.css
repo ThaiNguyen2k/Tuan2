@@ -1,0 +1,25 @@
+.container {
+    color: #444;
+    border: 1px solid dodgerblue;
+    background: #DDD;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    padding: 5px;
+    text-align: center;
+    border-radius: 38px;
+    width: 573px;
+    height: 70px;
+    position: relative;
+  }
+  
+  .container::before {
+    color: #444;
+    border: 1px solid #f70000;
+    background: #391d1d;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 5px;
+    text-align: center;
+    border-radius: 35px;
+    content: "";
+  }
