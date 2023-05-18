@@ -24,5 +24,5 @@ function clickEvent(e) {
 }
 function reset(){
     document.getElementById("test").style.fontWeight="normal";
-
+    
 }

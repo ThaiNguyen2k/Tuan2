@@ -15,23 +15,23 @@
         <form class="left">
             <h1>Login</h1>
             <p>Username</p>
-            <input class="input" type="text" placeholder="Username" />
+            <input class="input" type="text" checked="checked" placeholder="Username" />
             <div class="password">
                 <p>Password</p>
                 <p style="color: blue;">Forgot Password ?</p>
             </div>
             <input class="input" type="text" placeholder="Password" />
             <div class="center">
-                <button class="btnLogin">Login In</button>
+                <button type="button" class="btnLogin"  onclick="getLogin()">Login In</button>
                 <p style="color: #6096B4;">or continue with</p>
                 <div class="editBtn">
-                    <button class="btn">
+                    <button type="button" class="btn">
                         <img class="im" src="Google.png" />
                     </button>
-                    <button class="btn">
+                    <button type="button" class="btn">
                         <img class="im" src="Vector (1).png" />
                     </button>
-                    <button class="btn">
+                    <button type="button" class="btn">
                         <img class="im" src="fb.png" />
                     </button>
                 </div>
@@ -41,15 +41,15 @@
                 <p style="color: #D885A3; margin-left: 20px;">Sign up for free</p>
             </div>
         </form>
-        <div class="right">
-            <img style="width: 350px; height: auto; margin-left: -30px;"
-                src="Character-working-laptop-sitting-chair.png" />
-        </div>
-        <div class="right">
-            <img style="width: auto; height: 350px; margin-left: -60px;"
-                src="cactus.png" />
+        <div class="end">
+            <div class="right">
+                <img style="width: auto; height: 350px; margin-left: -100px;"
+                    src="Character-working-laptop-sitting-chair.png" />
+                <img style="width: auto; height: 350px; margin-right: 20px;" src="cactus.png" />
+            </div>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 
 </html>
