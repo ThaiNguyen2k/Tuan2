@@ -5,18 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="div.css">
-
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    <!-- <div id="myName">My name</div>
-    <button onmousedown="changeName()" onmouseup="rechange()">Click me</button>
-    <input type="text" id="text" placeholder="Enter text" onchange="changecolor()"/> -->
-    <div id="div1">Màu xanh</div>
-    <div id="div2">Màu đỏ</div>
-    <script src="main2.js"> </script>
+<body class="container">
+    <div class="content">
+        <form class="left">
+            <h1>Login</h1>
+            <p>Username</p>
+            <input class="input" id="userName" value="" type="text" checked="checked" placeholder="Username" required/>
+            <div class="password">
+                <p>Password</p>
+                <p style="color: blue;">Forgot Password ?</p>
+            </div>
+            <input id="pass" class="input" value="" type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+            <div class="center">
+                <button type="button" class="btnLogin"  onclick="getLogin()">Login In</button>
+                <p style="color: #6096B4;">or continue with</p>
+                <div class="editBtn">
+                    <button type="button" class="btn">
+                        <img class="im" src="Google.png" />
+                    </button>
+                    <button type="button" class="btn">
+                        <img class="im" src="Vector (1).png" />
+                    </button>
+                    <button type="button" class="btn">
+                        <img class="im" src="fb.png" />
+                    </button>
+                </div>
+            </div>
+            <div class="link">
+                <p>Don’t have an account yet?</p>
+                <p style="color: #D885A3; margin-left: 20px;">Sign up for free</p>
+            </div>
+        </form>
+        <div class="end">
+            <div class="right">
+                <img style="width: auto; height: 350px; margin-left: -100px;"
+                    src="Character-working-laptop-sitting-chair.png" />
+                <img style="width: auto; height: 350px; margin-right: 20px;" src="cactus.png" />
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
 </body>
-    
+
 </html>
